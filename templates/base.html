@@ -1,0 +1,31 @@
+{% load staticfiles i18n cms_tags menu_tags sekizai_tags %}
+{# latest version from 5.3.0 https://html5boilerplate.com/ #}
+<!doctype html>
+<html class="no-js" lang="{{ LANGUAGE_CODE }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>{% block title %}{% page_attribute page_title %} - {{ request.site.name }}{% endblock title %}</title>
+        <meta name="description" content="{% page_attribute 'meta_description' %}">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+
+        {% render_block "css" %}
+        {{ ALDRYN_SNAKE.render_head }}
+    </head>
+    <body>
+        {% cms_toolbar %}
+
+        <ul>
+            {% show_menu 0 0 100 100 %}
+        </ul>
+
+        {% block content %}
+            <p>Hello world! This is the Sass Boilerplate.</p>
+        {% endblock %}
+
+        {% render_block "js" %}
+        {{ ALDRYN_SNAKE.render_tail }}
+    </body>
+</html>

@@ -1,0 +1,12 @@
+{
+    "identifier": "sass",
+    "package-name": "djangocms-sass",
+    "version": "0.1.0",
+    "templates": [
+        ["base.html", "content"]
+    ],
+    "excluded": [
+        "LICENSE.txt",
+        "*.rst"
+    ]
+}
