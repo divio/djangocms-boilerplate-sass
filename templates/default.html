@@ -22,7 +22,11 @@
         </ul>
 
         {% block content %}
-            <p>Hello world! This is the Sass Boilerplate.</p>
+            {% placeholder content or %}
+                <p>This page has no content yet. Make sure you are in <em>Edit</em> mode
+                (hit the <strong>Edit page</strong> button if required). Then switch to
+                <em>Structure</em> mode.</p>
+            {% endplaceholder %}
         {% endblock %}
 
         {% render_block "js" %}
