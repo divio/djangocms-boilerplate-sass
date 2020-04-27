@@ -4,8 +4,8 @@
 # <NODE>
 ADD build /stack/boilerplate
 
-ENV NODE_VERSION=10.16.3 \
-    NPM_VERSION=6.9.0
+ENV NODE_VERSION=12.16.2 \
+    NPM_VERSION=6.14.4
 
 RUN bash /stack/boilerplate/install.sh
 
