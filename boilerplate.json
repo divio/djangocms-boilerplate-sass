@@ -1,7 +1,7 @@
 {
     "identifier": "sass",
     "package-name": "djangocms-sass",
-    "version": "1.2.0.1",
+    "version": "1.3.0.0",
     "templates": [
         ["default.html", "Default"]
     ],
