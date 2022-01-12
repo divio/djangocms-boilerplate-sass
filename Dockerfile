@@ -4,7 +4,7 @@
 # <NODE>
 ENV NVM_DIR=/opt/nvm \
     NVM_VERSION=0.39.0
-ENV NODE_VERSION=16.13.1 \
+ENV NODE_VERSION=16.13.2 \
     NPM_VERSION=8.3.0
 
 ADD build /stack/boilerplate
